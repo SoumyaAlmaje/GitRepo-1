@@ -29,6 +29,7 @@ public class Page_Admin extends BaseTest {
 
 		Actions act = new Actions(driver);
 		act.moveToElement(Adm).click().build().perform();
+                //EditBox,CheckBox
 
 		driver.findElement(By.xpath(pr_loc.getProperty("Newadmin"))).click();
 		driver.findElement(By.id(pr_loc.getProperty("firstname"))).sendKeys(pr_data.getProperty("first_name"));
